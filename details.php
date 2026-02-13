@@ -1,0 +1,27 @@
+<?php
+session_start();
+?>
+<html>
+    <body>
+        
+    <head>
+        <style>
+            textArea{
+                height: 700px;
+                width:1300px;
+            }
+        </style>
+    </head>
+<form action="">
+  <p><label for="w3review">Entered Details</label></p>
+  <textarea id="w3review" name="details" rows="4" cols="50" height="300px"> <?php echo print_r($_SESSION, TRUE) ; ?></textarea>
+  <br><br>
+<br>
+     
+        </br>
+</form>
+          <button onClick="window.location.href='index.php';">  
+Cancel 
+</button>
+    </body>
+        </html>
